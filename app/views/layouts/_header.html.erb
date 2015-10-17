@@ -1,0 +1,19 @@
+<nav>
+  <div class="nav-wrapper navbar-fixed ">
+    <div class="brand-logo">
+      <%= link_to "BJ Tech & Auto", root_path %></div>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li><%= link_to "Home", root_path %></li>
+       <% if current_user %>
+         <li><%=link_to "#" do%></li>
+         <i class="material-icons">shopping_cart</i>
+         <% end %>
+         <li><%= link_to 'Log Out', sign_out_path, method: :delete %><li>
+    </ul>
+  </nav>
+       <% else %>
+         <li><%= link_to "Log In", sign_in_path %>
+         </nav>
+       <% end %>
+       </ul>
+</nav>

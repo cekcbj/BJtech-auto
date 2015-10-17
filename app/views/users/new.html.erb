@@ -1,0 +1,31 @@
+<div class="container">
+<%= simple_form_for @user do |f| %>
+
+<form class="col s10">
+   <div class="row">
+     <div class="input-field col s5">
+  <%= f.input :first_name, label: "First Name" %>
+     </div>
+     <div class="input-field col s5">
+  <%= f.input :last_name, label: "Last Name" %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s10">
+      <%= f.input :email %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s10">
+        <%= f.input :password %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s10">
+      <%= f.input :password_confirmation, label: "Sorry, evidently I have to ask again" %>
+    </div>
+  </div>
+  <%= f.submit "Create Account", class: "btn btn-primary" %>
+<% end %>
+</form>
+</div>
