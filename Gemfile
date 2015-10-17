@@ -25,6 +25,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'materialize-sass'
 
+gem 'simple_form'
+
 
 
 # Use ActiveModel has_secure_password
