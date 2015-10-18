@@ -5,9 +5,8 @@
     <ul id="nav-mobile" class="right hide-on-med-and-down">
       <li><%= link_to "Home", root_path %></li>
        <% if current_user %>
-         <li><%=link_to "#" do%></li>
-         <i class="material-icons">shopping_cart</i>
-         <% end %>
+        <li>Hi <%= @current_user.first_name %></li>
+         <li><%=link_to "View Cart", shopping_cart_path %></li>
          <li><%= link_to 'Log Out', sign_out_path, method: :delete %><li>
     </ul>
   </nav>

@@ -1,1 +1,37 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
 @import "materialize";
+
+
+nav {
+background-color:#424242;
+padding-top: 10px;
+}
+nav a {
+  color:white;
+}
+
+.brand-logo {
+  margin-left: 15px;
+}
+
+form {
+  margin-top: 35px;
+}
+
+.products {
+  display:flex;
+}
+
+.card {width:300px;
+margin:10px;}
+
+.card .card-reveal {
+  height:65%;
+}
+
+.price {
+  margin-left: 30px;
+  color:#ef6c00;
+}

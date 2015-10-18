@@ -7,6 +7,11 @@ Rails.application.routes.draw do
     get "sign_up" => 'users#new', as: :sign_up
     post "sign_up" => 'users#create', as: :users
 
+    get "user/:id/cart" => 'carts#show'
+
+    get "cart" => 'carts#show', as: :shopping_cart
+    post "/carts/add/:product_id" => "carts#add", as: :add_to_cart
+  delete "/carts/remove/:product_id" => 'carts#remove', as: :remove_from_cart
   root 'products#index'
 
   # The priority is based upon order of creation: first created -> highest priority.

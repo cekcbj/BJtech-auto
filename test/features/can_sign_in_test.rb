@@ -10,6 +10,6 @@ class CanSignInTest < Capybara::Rails::TestCase
     fill_in "Email", with: @user.email
     fill_in "Password", with: "12345678"
     click_button "Sign In"
-    assert_content page, "Hello #{@user.first_name}!"
+    assert_content page, "Hi #{@user.first_name}"
   end
 end
