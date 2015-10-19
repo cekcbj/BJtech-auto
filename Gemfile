@@ -27,6 +27,10 @@ gem 'materialize-sass'
 
 gem 'simple_form'
 
+gem 'payola-payments'
+
+gem "figaro"
+
 gem 'bootstrap-sass'
 
 # Use ActiveModel has_secure_password

@@ -26,3 +26,14 @@
         <td><strong><%= number_to_currency @cart.price_in_dollars %></strong></td>
   </tbody>
 </table>
+
+<% if @cart.cart_items.any? %>
+  <%= render 'payola/transactions/checkout',
+              sellable: @cart,
+              button_text: "Buy Now",
+              button_class: "btn",
+              name: "Ships Today",
+              description: pluralize(@cart.cart_items.pluck(:quantity).sum, "Item"),
+              product_image_path: @cart.cart_items.first.product.photo
+  %>
+<% end %>
