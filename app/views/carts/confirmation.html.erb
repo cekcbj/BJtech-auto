@@ -1,0 +1,10 @@
+<div class="well">
+  <dl>
+    <dt>Email</dt>
+    <dd><%= @cart.user.email %></dd>
+    <dt>Order ID</dt>
+    <dd><%= @sale.guid %></dd>
+    <dt>Order Date</dt>
+    <dd><%= @sale.created_at.strftime("%A, %B %e, %Y - %l:%M%p") %></dd>
+  </dl>
+</div>
