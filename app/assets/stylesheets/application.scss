@@ -22,9 +22,10 @@ form {
 
 .products {
   display:flex;
+  flex-wrap: wrap;
 }
 
-.card {width:300px;
+.card {flex:3;
 margin:10px;}
 
 .card .card-reveal {

@@ -1,9 +1,9 @@
 
 
-<div class="products row">
+<div class="products row col s12">
 
 <% @products.each do |product| %>
-<div id="product-<%=product.id%>" class="col s4 ">
+<div id="product-<%=product.id%>" class="col s4  ">
   <div class="card med white">
     <div class="card-image waves-effect waves-block waves-light">
       <%= image_tag product.photo, :size => "200x300"%>
